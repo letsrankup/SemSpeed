@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "cleanUrls": true,
+  "regions": ["iad1"],
+  "images": {
+    "sizes": [640, 750, 828, 1080, 1200],
+    "domains": [],
+    "minimumCacheTTL": 60
+  }
+}
