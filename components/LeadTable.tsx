@@ -21,11 +21,13 @@ export const LeadTable: React.FC<{ data: LeadRow[] }> = ({ data }) => {
             <th className="p-4">Contract Potential</th>
             <th className="p-4 text-right">Captured</th>
           </tr>
-        </footer>
+        </thead>
         <tbody className="divide-y divide-gray-800/50 text-sm text-gray-300">
           {data.length === 0 ? (
             <tr>
-              <td colSpan={5} className="p-8 text-center text-xs text-gray-500 font-medium">No active inbound lead streams configured.</td>
+              <td colSpan={5} className="p-8 text-center text-xs text-gray-500 font-medium">
+                No active inbound lead streams configured.
+              </td>
             </tr>
           ) : (
             data.map((lead) => (
@@ -47,4 +49,4 @@ export const LeadTable: React.FC<{ data: LeadRow[] }> = ({ data }) => {
     </div>
   );
 };
-                  
+                
